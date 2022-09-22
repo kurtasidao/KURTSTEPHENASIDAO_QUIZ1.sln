@@ -1,0 +1,26 @@
+﻿@model IEnumerable<KURTSTEPHENASIDAO_QUIZ1.Models.Student>
+@{
+    ViewBag.Title = "AddNewStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add New Student</h2>
+<form action="AddNewStudent" method="post">
+    <label for="StudentNumber">Student Number</label>
+    <input type="text" name="StudentNumber" id="StudentNumber" />
+    <br />
+    <label for="LastName">Last Name</label>
+    <input type="text" name="LastName" id="LastName" />
+    <br />
+    <label for="FirstName">First Name</label>
+    <input type="text" name="FirstName" id="FirstName" />
+    <br />
+    <label for="Birthday">Birthday</label>
+    <input type="text" name="Birthday" id="Birthday" />
+    <br />
+    <label for="Gender">Gender</label>
+    <input type="text" name="Gender" id="Gender" />
+    <br />
+    <input type="submit" value="Save" />
+</form>
+
